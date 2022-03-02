@@ -8,7 +8,24 @@
     <title>Simple JAM App</title>
   </head>
   <body>
-    <h1>I <img SRC="heart.png"> JAMstack</h1>
+    <h1>I <img src="heart.png" /> JAMstack</h1>
     <p>Share your thoughts or questions on this amazing new web architecture.</p>
+
+    <div id="disqus_thread"></div>
+    <script>
+      (function () {
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://simplejam-gpuzmwfsva.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+    </noscript>
+
+    <script id="dsq-count-scr" src="//simplejam-gpuzmwfsva.disqus.com/count.js" async></script>
+    
   </body>
 </html>
